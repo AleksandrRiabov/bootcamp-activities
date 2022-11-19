@@ -1,1 +1,1 @@
-# bootcamp-activities
+# Repository for Bootcamp activities 
