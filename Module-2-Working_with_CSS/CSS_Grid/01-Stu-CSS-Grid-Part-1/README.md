@@ -75,7 +75,7 @@ Create a CSS selector that targets the `.heroGridArea` class and add the followi
 
 * Open `index.html` in your browser. It should almost look complete, except for the fact that the headline `div` isn’t in the right place.
 
-* In order to align the headline `div`, add a `border: 5px solid #FF6200;`.
+* In order to align the headline `div`, add a `border-: 5px solid #FF6200;`.
 
 * Next, add a transparent `background-color:`. 
 
