@@ -12,8 +12,8 @@ body {
   grid-template-rows: 75% 25%;
   grid-template-columns: 75% 25%;
   grid-template-areas:
-  "featuredProduct secondaryProduct"
-  "featuredProduct CTA";
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA";
 }
 
 #featuredProduct {
@@ -34,7 +34,7 @@ body {
 }
 
 #headline {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 5px solid #FF6200;
   position: absolute;
   right: -50px;
@@ -53,6 +53,73 @@ body {
   position: relative;
 }
 
+/* Second activity */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'Bookcases Bedroom Patio'
+    'Couches Couches Patio'
+    'Desks Desks Desks'
+  ;
+}
+
+#bookcases {
+  grid-area: Bookcases;
+  background-image: url(../images/bookcases.png);
+}
+
+#bedroom {
+  grid-area: Bedroom;
+  background-image: url(../images/beds.png);
+}
+
+#couches {
+  grid-area: Couches;
+  background-image: url(../images/couch.png);
+}
+
+#patio {
+  grid-area: Patio;
+  background-image: url(../images/patio.png);
+}
+
+#desks {
+  grid-area: Desks;
+  background-image: url(../images/desks.png);
+}
+
+
+.categoryGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+
+}
+
 /* Category Grid CSS */
 
 
@@ -65,30 +132,36 @@ body {
   flex-direction: row;
   margin: 0px 5%;
 }
+
 #navBar h1 {
   width: 25%;
   font-weight: 500;
 }
+
 #navigation {
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: space-evenly;
 }
+
 #navigation p {
   cursor: pointer;
   text-decoration: none;
 }
+
 .icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 25%;
 }
+
 .icons img {
   margin: 15px;
   cursor: pointer;
 }
+
 .highlight {
   color: #FF6200;
   font-weight: 700;
